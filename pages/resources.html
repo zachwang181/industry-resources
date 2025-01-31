@@ -17,6 +17,7 @@
             color: #333;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            margin-top: 30px;
         }
         
         ul {
@@ -39,17 +40,371 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #e1f5fe;
+            color: #0277bd;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f5f6fa;
+        }
+
+        .source-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        .chinese {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .foreign {
+            background: #fff3e0;
+            color: #e65100;
+        }
     </style>
 </head>
 <body>
-    <!-- 原有的内容移到这里 -->
     <h1>行业资源导航</h1>
     
-    <h2>新闻资讯类网站</h2>
-    <ul>
-        <li><a href="https://www.autoinfo.org.cn/">盖世汽车资讯</a> - 专注于自动驾驶、新能源汽车行业动态</li>
-        <!-- ... 其他内容 ... -->
-    </ul>
-    <!-- ... 其他部分 ... -->
+    <h2>自动驾驶领域</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.autoinfo.org.cn/">盖世汽车资讯</a></td>
+                <td>专注于自动驾驶、新能源汽车行业动态</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.d1ev.com/">第一电动网</a></td>
+                <td>新能源汽车与智能驾驶资讯</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.marklines.com/cn/">MarkLines</a></td>
+                <td>全球汽车产业数据库</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety">NHTSA自动驾驶</a></td>
+                <td>美国交通部自动驾驶安全数据</td>
+                <td><span class="tag">政策</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.chinaev.org/">中国电动汽车百人会</a></td>
+                <td>行业政策与发展动态</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>传感器技术</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.sensorexpert.com.cn/">传感器专家网</a></td>
+                <td>传感器行业资讯与技术</td>
+                <td><span class="tag">技术</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.yole.fr/">Yole Development</a></td>
+                <td>传感器市场研究报告</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.semi.org.cn/">SEMI中国</a></td>
+                <td>半导体产业协会</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.sensorsportal.com/">Sensors Web Portal</a></td>
+                <td>国际传感器技术门户</td>
+                <td><span class="tag">技术</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>芯片产业</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.eet-china.com/">电子工程专辑</a></td>
+                <td>电子工程与芯片产业资讯</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.icinsights.com/">IC Insights</a></td>
+                <td>半导体市场研究</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.digitimes.com.tw/">DIGITIMES</a></td>
+                <td>芯片产业链分析</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.dramexchange.com/">集邦咨询</a></td>
+                <td>存储芯片市场分析</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>机器人产业</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.jiqizhixin.com/">机器之心</a></td>
+                <td>AI、机器人技术前沿资讯</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.roboticschina.com/">机器人网</a></td>
+                <td>工业机器人、服务机器人行业动态</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.ifr.org/">IFR</a></td>
+                <td>国际机器人联合会数据统计</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cria.org.cn/">中国机器人产业联盟</a></td>
+                <td>行业协会信息</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.ofweek.com/robot/">OFweek机器人网</a></td>
+                <td>机器人产业新闻与分析</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>减速器与传动</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.chinarobot.com.cn/">中国机器人网</a></td>
+                <td>机器人核心零部件资讯</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.harmonicdrive.net/">哈默纳科</a></td>
+                <td>谐波减速器技术与应用</td>
+                <td><span class="tag">技术</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.nabtesco.com/">纳博特斯克</a></td>
+                <td>精密减速器产业信息</td>
+                <td><span class="tag">产业</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>行业数据库</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.wind.com.cn/">万得资讯</a></td>
+                <td>专业金融数据终端</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.statista.com/">Statista</a></td>
+                <td>全球产业统计数据</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.idc.com/">IDC</a></td>
+                <td>全球科技产业研究</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.counterpointresearch.com/">Counterpoint</a></td>
+                <td>科技市场研究</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>投资研究资源</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.eastmoney.com/">东方财富网</a></td>
+                <td>综合财经门户，行业研报</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.gelonghui.com/">格隆汇</a></td>
+                <td>港股、科技股研究</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://robo.datayes.com/">RoboReport</a></td>
+                <td>人工智能研究报告平台</td>
+                <td><span class="tag">研究</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.bloomberg.com/">Bloomberg</a></td>
+                <td>全球金融资讯</td>
+                <td><span class="tag">数据</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>国际资源</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>网站名称</th>
+                <th>简介</th>
+                <th>类型</th>
+                <th>来源</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.roboticsbusinessreview.com/">Robotics Business Review</a></td>
+                <td>机器人行业商业分析</td>
+                <td><span class="tag">分析</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.therobotreport.com/">The Robot Report</a></td>
+                <td>机器人产业新闻</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://techcrunch.com/tag/robotics/">TechCrunch Robotics</a></td>
+                <td>科技创新与投资动态</td>
+                <td><span class="tag">新闻</span></td>
+                <td><span class="source-tag chinese">中文媒体</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://spectrum.ieee.org/robotics">IEEE Spectrum Robotics</a></td>
+                <td>机器人技术前沿</td>
+                <td><span class="tag">技术</span></td>
+                <td><span class="source-tag foreign">外文媒体</span></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html> 
